@@ -49,8 +49,10 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
    otras causas (falta de plata hasta la quincena, tener solo efectivo, simple
    olvido); si esas otras causas pesan más, aclarar el monto no hará que se
    pague a tiempo. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19)
+   — weakened by [product/insights/2026-10-28-0845-encuesta-deudor-sintetica.md] (2026-10-28, synthetic): solo 3 de 18 retrasos se deben a no saber cuánto; 7 de 18 dependen del acreedor (monto corregido o cobro que no llegó)
 6. [product] [value] Lo que más le pesa al grupo es no encontrar fácil cuánto
    debe cada uno y a quién, no hacer el cálculo; con verlo en un solo lugar
    se cobraría durante el viaje o al terminar, no días después. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19): quien cobraba se equivocó en el monto, así que el cálculo también falla
+   — weakened by [product/insights/2026-10-28-0845-encuesta-deudor-sintetica.md] (2026-10-28, synthetic): en lo más difícil, 22 de 30 menciones son reconstruir, acordar o cuadrar gastos; 6 son encontrar el cobro o la cuenta
 7. [product] [value] El grupo quiere el presupuesto estimado previo y los
    gastos reales en la misma herramienta, no solo el reparto final.
