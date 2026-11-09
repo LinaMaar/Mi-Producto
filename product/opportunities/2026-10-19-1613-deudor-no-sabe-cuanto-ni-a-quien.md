@@ -57,7 +57,11 @@ Referencias a product/overview.md (registro único).
 
 - [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [value] En un viaje típico del grupo, al menos 1 de cada 3 deudores pregunta en el chat cuánto o a quién pagar, o paga un monto distinto al que debe (de menos, de más o doble). — overview #4
 - [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [viability] El retraso en los pagos se explica sobre todo por no saber cuánto y a quién, y no por otras causas (falta de plata hasta la quincena, tener solo efectivo, simple olvido); si esas otras causas pesan más, aclarar el monto no hará que se pague a tiempo. — overview #5
+- [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [viability] A quien le falta el monto o la cuenta al pagar, tenerlos completos le adelanta el pago; las demás causas de retraso (olvido, falta de plata, efectivo) quedan fuera de esta oportunidad. — overview #10 (reemplaza a la #5, contradicted 2026-11-09)
 - Relacionada: [product] [value] overview #6 (antes #4); la viabilidad de esta oportunidad la afina.
+- Relacionada: [product] [viability] overview #11 (app gratuita traída por la organizadora), que reemplaza la pregunta de la #3.
+
+Estado al 2026-11-09: la #4 quedó confirmed por la encuesta real y la #5 contradicted por las entrevistas reales.
 
 ## Agenda de investigación
 

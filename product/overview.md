@@ -33,6 +33,8 @@ actualizaron.
 
 Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 
+**Orden de ataque (actualizado 2026-11-09; los números no cambian para no romper referencias):** #11, #9, #8, #10, #1, #2, #6, #7. Resueltas, fuera del orden: #3 (contradicted), #4 (confirmed), #5 (contradicted; la reemplaza la #10).
+
 1. [product] [value] Durante un viaje, cada amigo registrará por su cuenta lo
    que compró para el grupo y marcará sus pagos, sin que Lina tenga que
    cargarlo ni perseguirlos. — weakened by [product/personas/camilo-restrepo.md], [product/personas/santiago-mejia.md] (2026-10-19, synthetic)
@@ -49,6 +51,7 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 4. [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [value] En un viaje típico
    del grupo, al menos 1 de cada 3 deudores pregunta en el chat cuánto o a
    quién pagar, o paga un monto distinto al que debe (de menos, de más o doble).
+   — confirmed by [product/insights/2026-11-09-0807-encuesta-deudor-real.md] (2026-11-09, survey): 15 de 23 deudores preguntaron cuánto o a qué número, o pagaron mal; límite: no se pudo separar el grupo de Lina porque el canal no quedó registrado
 5. [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [viability] El retraso en
    los pagos se explica sobre todo por no saber cuánto y a quién, y no por
    otras causas (falta de plata hasta la quincena, tener solo efectivo, simple
@@ -73,3 +76,14 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
    sin que Lina tenga que cargarlo; el deudor no tiene ese motivo.
    Nota: por impacto × incertidumbre va antes que la #1, a la que acota; se
    agregó al final para no romper las referencias por número.
+10. [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [viability] A quien le
+    falta el monto o la cuenta al pagar, tenerlos completos le adelanta el
+    pago; las demás causas de retraso (olvido, falta de plata, efectivo)
+    quedan fuera de esta oportunidad. Reemplaza a la #5 (contradicted).
+    Origen: en la encuesta, 14 de 15 deudores sin el monto o la cuenta pagaron
+    tarde; es una correlación, no prueba que tenerlos adelante el pago.
+11. [product] [viability] Si Lina, como organizadora, trae una app gratuita
+    para dividir gastos al viaje del 14 nov, todo el grupo entra y la usa
+    hasta cerrar las cuentas. Reemplaza la pregunta de la #3 (contradicted):
+    si se cumple, construir una herramienta propia pierde sentido; si falla,
+    se sabe por qué.
