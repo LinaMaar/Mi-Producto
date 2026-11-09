@@ -50,9 +50,11 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
    olvido); si esas otras causas pesan más, aclarar el monto no hará que se
    pague a tiempo. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19)
    — weakened by [product/insights/2026-10-28-0845-encuesta-deudor-sintetica.md] (2026-10-28, synthetic): solo 3 de 18 retrasos se deben a no saber cuánto; 7 de 18 dependen del acreedor (monto corregido o cobro que no llegó)
+   — weakened by [product/insights/2026-11-09-0807-encuesta-deudor-real.md] (2026-11-09, survey): es la causa principal más común (7 de 17) pero sin mayoría; de quienes no tenían cuánto o a quién, 14 de 15 pagaron tarde
 6. [product] [value] Lo que más le pesa al grupo es no encontrar fácil cuánto
    debe cada uno y a quién, no hacer el cálculo; con verlo en un solo lugar
    se cobraría durante el viaje o al terminar, no días después. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19): quien cobraba se equivocó en el monto, así que el cálculo también falla
    — weakened by [product/insights/2026-10-28-0845-encuesta-deudor-sintetica.md] (2026-10-28, synthetic): en lo más difícil, 22 de 30 menciones son reconstruir, acordar o cuadrar gastos; 6 son encontrar el cobro o la cuenta
+   — weakened by [product/insights/2026-11-09-0807-encuesta-deudor-real.md] (2026-11-09, survey): lo más molesto es reconstruir o cuadrar (8 menciones) más que encontrar la cuenta (4), aunque 12 de 23 no tenían el número al pagar
 7. [product] [value] El grupo quiere el presupuesto estimado previo y los
    gastos reales en la misma herramienta, no solo el reparto final.
