@@ -36,3 +36,9 @@
 - Principal: celular (Android), todo lo hace desde ahí durante el viaje.
 - Secundario: portátil del trabajo, solo para el Excel antes del viaje.
 - Usa apps con gusto si son rápidas; desinstala lo que le pide registrarse con muchos pasos.
+
+## Evidencia real (derive-personas, 2026-11-09)
+
+Validada por la persona derivada [luisa-rios](luisa-rios.md) (grupo C, quien pone la plata por el grupo):
+- **Validado:** no cobrar lo chico por pena (Mariana, 80.000 en taxis; Ana María, 90.000 de un desayuno) y tener que perseguir (4 menciones en la encuesta; "tocó cobrar uno por uno").
+- **Sin evidencia todavía:** los 20 minutos por persona respondiendo "¿cuánto era?" y lo de corregir el Excel cuando lo arma otro.
