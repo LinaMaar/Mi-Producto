@@ -2,7 +2,7 @@
 opportunity: quien-paga-pierde-plata-y-persigue
 status: chosen
 chosen: splitwise-traido-por-organizadora
-tests:
+tests: product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md
 ---
 
 # Soluciones para: Quien paga por el grupo pierde plata y desgaste recuperándola
@@ -45,7 +45,7 @@ Herramienta propia que usa solo el pagador: anota el gasto y la herramienta mand
 Lina eligió A3 para probar el 2026-11-09, igual que la recomendación. Razones: es la única alternativa con evidencia real sobre la solución y no solo sobre el dolor; cuando se adopta, cumple el criterio de continuidad de la sponsor; y el viaje del 14 nov ya estaba planeado para probar la #11. De paso prueba la #9 y si juntar lo chico en un neto quita la pena. Qué cambiaría la decisión: si el grupo no entra a la app, A4 es el plan B sin app; si falla porque los deudores no quieren instalar, A5 gana sentido; si los pagadores no registran lo chico ni con la app, la #9 cae y se vuelve a investigación.
 
 ## Por probar
-- A3 — #11: "Si Lina, como organizadora, trae una app gratuita para dividir gastos al viaje del 14 nov, todo el grupo entra y la usa hasta cerrar las cuentas". Es la que la mata: la relief ya se vio cuando la app se adopta (Juan Pablo), y 2 de 3 intentos fallaron justo por adopción. Junto con ella: [feature] [value] sobre lo chico, porque es la parte del dolor del pagador que ningún cobro actual resuelve. Se diseña en /design-solution-tests.
+- A3 — #11 (adopción, la que la mata), #12 (gastos chicos) y #13 (nadie cobra dos veces): diseñadas como T1, T2 y T3 en [product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md](../tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md). La #14 queda para después.
 
 ## Propuesta de valor: Splitwise traído por la organizadora
 - Dolor que alivia: lo chico se pierde por pena (80.000 en taxis, 90.000 de un desayuno) y lo grande hay que perseguirlo (Kevin, 2 semanas; Simón, 3 cobros; Andrea, 3 semanas pagando intereses) (product/personas/luisa-rios.md, real).
