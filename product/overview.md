@@ -36,11 +36,16 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 1. [product] [value] Durante un viaje, cada amigo registrará por su cuenta lo
    que compró para el grupo y marcará sus pagos, sin que Lina tenga que
    cargarlo ni perseguirlos. — weakened by [product/personas/camilo-restrepo.md], [product/personas/santiago-mejia.md] (2026-10-19, synthetic)
+   — weakened by [product/insights/2026-11-09-0836-entrevistas-deudor-sinteticas.md] (2026-11-09, synthetic): 0 de 4 registraron lo suyo; 3 de 4 no cobraron gastos propios
+   — weakened by [product/insights/2026-11-09-0847-entrevistas-deudor-reales.md] (2026-11-09, real): en 5 de 6 viajes nadie registró lo suyo; solo pasó cuando el organizador trajo Splitwise; los gastos chicos se pierden por pena
 2. [product] [value] El grupo dejará el Excel y WhatsApp por una herramienta
    nueva aunque hoy las cuentas se resuelven sin mayor drama; el fastidio
    actual alcanza para cambiar de hábito. — weakened by [product/personas/santiago-mejia.md] (2026-10-19, synthetic)
+   — weakened by [product/insights/2026-11-09-0847-entrevistas-deudor-reales.md] (2026-11-09, real): 2 de 6 lo describen como "normal" y sin arreglos propios; en los demás la molestia fue plata, efectivo u olvido más que las cuentas
 3. [product] [viability] Construir y mantener una herramienta propia le rinde
    más a Lina que adoptar una app gratuita que ya exista para dividir gastos.
+   — weakened by [product/insights/2026-11-09-0836-entrevistas-deudor-sinteticas.md] (2026-11-09, synthetic): Splitwise abandonado porque solo 2 lo instalaron; link de app que nadie abrió
+   — contradicted by [product/insights/2026-11-09-0847-entrevistas-deudor-reales.md] (2026-11-09, real): Splitwise resolvió cuánto y a quién y se sigue usando cuando lo trajo el organizador; falló 2 veces por adopción ("otra app no, por favor"), algo que también le pasaría a una herramienta propia
 4. [opportunity: deudor-no-sabe-cuanto-ni-a-quien] [value] En un viaje típico
    del grupo, al menos 1 de cada 3 deudores pregunta en el chat cuánto o a
    quién pagar, o paga un monto distinto al que debe (de menos, de más o doble).
@@ -51,6 +56,8 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
    pague a tiempo. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19)
    — weakened by [product/insights/2026-10-28-0845-encuesta-deudor-sintetica.md] (2026-10-28, synthetic): solo 3 de 18 retrasos se deben a no saber cuánto; 7 de 18 dependen del acreedor (monto corregido o cobro que no llegó)
    — weakened by [product/insights/2026-11-09-0807-encuesta-deudor-real.md] (2026-11-09, survey): es la causa principal más común (7 de 17) pero sin mayoría; de quienes no tenían cuánto o a quién, 14 de 15 pagaron tarde
+   — weakened by [product/insights/2026-11-09-0836-entrevistas-deudor-sinteticas.md] (2026-11-09, synthetic): los retrasos fueron por cobros incompletos (sin monto claro, sin llave, sin neto, cobro que no llegó), ninguno por plata u olvido
+   — contradicted by [product/insights/2026-11-09-0847-entrevistas-deudor-reales.md] (2026-11-09, real): solo 2 de 6 retrasos por cuánto o a quién; 4 por olvido, falta de plata o solo efectivo (0 de 3 entre los referidos)
 6. [product] [value] Lo que más le pesa al grupo es no encontrar fácil cuánto
    debe cada uno y a quién, no hacer el cálculo; con verlo en un solo lugar
    se cobraría durante el viaje o al terminar, no días después. — weakened by [product/research/2026-04-07-chat-viaje-cuanto-enviar.md] (2026-10-19): quien cobraba se equivocó en el monto, así que el cálculo también falla
