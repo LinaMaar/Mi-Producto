@@ -69,7 +69,9 @@ Referencias a product/overview.md (registro único).
 
 ## Ideas candidatas (no evaluadas)
 
-- Fondo común previo (ya estaba en la oportunidad del deudor): nadie adelanta plata, como en el caso de Patricia.
-- Cobro individual a cada deudor en vez de un mensaje en el grupo (de los insights reales 9 nov).
-- Pedir las llaves de pago de todos antes del viaje (el arreglo de Carolina y de Mariana).
-- Que el organizador traiga Splitwise al grupo (el caso de Juan Pablo).
+Exploradas en [product/solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md](../solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md).
+
+- Fondo común previo (ya estaba en la oportunidad del deudor): nadie adelanta plata, como en el caso de Patricia. → `parked`
+- Cobro individual a cada deudor en vez de un mensaje en el grupo (de los insights reales 9 nov). → `parked`
+- Pedir las llaves de pago de todos antes del viaje (el arreglo de Carolina y de Mariana). → `parked` (fusionada con el cobro individual)
+- Que el organizador traiga Splitwise al grupo (el caso de Juan Pablo). → `chosen`
