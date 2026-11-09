@@ -37,3 +37,9 @@
 ## Por qué es negative
 
 Parece usuaria (organiza viajes en grupo y reparte gastos), pero queda fuera a propósito: el overview deja el grupo mixto de familia y amigos de todas las edades fuera del foco. Su caso — un solo pagador, aportes desiguales acordados de antemano, participantes sin celular — empuja la herramienta hacia otro problema. Si una decisión de diseño la favorece a ella sobre Valentina, es señal de que se está diseñando para la persona equivocada.
+
+## Evidencia real (derive-personas, 2026-11-09)
+
+- **Validado: el límite de alcance.** La encuesta real descalificó a 8 de 45 por casos como el suyo: 3 por fondo común, 2 por un solo pagador y 3 por viajar con familia o grupos mixtos (product/insights/2026-11-09-0807-encuesta-deudor-real.md).
+- **Eco parcial dentro del segmento:** Ana María (21 años, en el segmento) paga en efectivo y no tiene Nequi activo: "No todo el mundo tiene Nequi o paga con el celular." Se parece a "no todos tienen celular con datos", pero es otra causa y está dentro del foco: ver [jeronimo-castano](jeronimo-castano.md).
+- **Sin evidencia real todavía:** aportes desiguales acordados por familia y participantes sin celular. Ninguna entrevista real fue a un viaje familiar, porque el screener los excluye.
