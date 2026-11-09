@@ -65,3 +65,11 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
    — weakened by [product/insights/2026-11-09-0807-encuesta-deudor-real.md] (2026-11-09, survey): lo más molesto es reconstruir o cuadrar (8 menciones) más que encontrar la cuenta (4), aunque 12 de 23 no tenían el número al pagar
 7. [product] [value] El grupo quiere el presupuesto estimado previo y los
    gastos reales en la misma herramienta, no solo el reparto final.
+8. [opportunity: quien-paga-pierde-plata-y-persigue] [value] En un viaje
+   típico, al menos 1 de cada 2 personas que pagan por el grupo deja algún
+   gasto sin cobrar o tiene que cobrarle más de una vez a algún deudor.
+9. [opportunity: quien-paga-pierde-plata-y-persigue] [viability] Quien pagó
+   por el grupo sí registrará lo que puso, porque es quien quiere recuperarlo,
+   sin que Lina tenga que cargarlo; el deudor no tiene ese motivo.
+   Nota: por impacto × incertidumbre va antes que la #1, a la que acota; se
+   agregó al final para no romper las referencias por número.
