@@ -34,3 +34,10 @@
 - Principal: celular (iPhone de segunda mano, con poco espacio de almacenamiento).
 - Secundario: portátil para la universidad.
 - Prefiere un enlace que se abra en el navegador antes que instalar otra app.
+
+## Evidencia real (derive-personas, 2026-11-09)
+
+Validada en parte por la persona derivada [manuela-zapata](manuela-zapata.md) (grupo A, el deudor al que no le llega el dato) y, en lo del olvido, por [jeronimo-castano](jeronimo-castano.md) (grupo B):
+- **Validado:** no preguntar por pena (Mariana), querer pagar una sola vez (Julián) y olvidar el pago cuando el cobro llega tarde o al grupo (Ricardo, Mariana).
+- **Sin evidencia todavía:** el pago doble de 60.000 nunca reclamado y no encontrar su fila en el Excel.
+- **Tipo:** sigue como secondary (decidido 2026-11-09): es la variante ocasional que casi nunca paga nada grande; el deudor principal es Manuela (primary).
