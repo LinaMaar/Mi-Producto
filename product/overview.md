@@ -33,7 +33,7 @@ actualizaron.
 
 Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 
-**Orden de ataque (actualizado 2026-11-09; los números no cambian para no romper referencias):** #11, #9, #8, #10, #1, #2, #6, #7. Resueltas, fuera del orden: #3 (contradicted), #4 (confirmed), #5 (contradicted; la reemplaza la #10).
+**Orden de ataque (actualizado 2026-11-09; los números no cambian para no romper referencias):** #11, #12, #9, #13, #14, #8, #10, #1, #2, #6, #7 (#12 a #14 se prueban junto con la #11 en el viaje del 14 nov). Resueltas, fuera del orden: #3 (contradicted), #4 (confirmed), #5 (contradicted; la reemplaza la #10).
 
 1. [product] [value] Durante un viaje, cada amigo registrará por su cuenta lo
    que compró para el grupo y marcará sus pagos, sin que Lina tenga que
@@ -87,3 +87,15 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
     hasta cerrar las cuentas. Reemplaza la pregunta de la #3 (contradicted):
     si se cumple, construir una herramienta propia pierde sentido; si falla,
     se sabe por qué.
+12. [feature: splitwise-traido-por-organizadora] [value] Con la app en el
+    viaje, los gastos chicos se registran y se recuperan dentro del neto: al
+    21 nov, al menos 3 de cada 4 gastos chicos pagados por el grupo están en
+    la app, y ningún pagador dice haber dejado uno sin cobrar por pena.
+    Origen: product/solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md
+13. [feature: splitwise-traido-por-organizadora] [value] Con el neto y los
+    recordatorios de la app, ningún pagador tiene que escribir más de un cobro
+    a un mismo deudor: al 21 nov, todos los deudores pagaron sin un segundo
+    mensaje escrito por el pagador. Origen: ídem.
+14. [feature: splitwise-traido-por-organizadora] [viability] Lina solo
+    registra lo que ella pagó: no carga gastos ajenos ni revisa quién
+    actualizó. Origen: ídem.
