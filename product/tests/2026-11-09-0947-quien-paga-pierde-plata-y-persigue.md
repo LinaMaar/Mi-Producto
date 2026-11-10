@@ -19,14 +19,14 @@ Bajo prueba: A3, la organizadora trae Splitwise al viaje (`splitwise-traido-por-
 Definición de **gasto chico**: un gasto por el grupo cuya cuota por persona es menor a 20.000 (los casos reales fueron 9.000 y 15.000).
 
 ## T1. splitwise-traido-por-organizadora: adopción con Lina como organizadora
-- **Test status:** designed
+- **Test status:** ready
 - **Belief under test:** "Si Lina, como organizadora, trae una app gratuita para dividir gastos al viaje del 14 nov, todo el grupo entra y la usa hasta cerrar las cuentas." — overview #11
 - **Risk:** [viability]
 - **Test type:** field-trial
 - **What we do:** 1) Antes del viaje (10 a 13 nov), Lina crea el grupo en Splitwise y manda el link al chat del viaje con su mensaje normal de organizadora. 2) Anota cuándo entra cada integrante. 3) Durante el viaje, cada quien registra lo que paga y Lina no carga gastos ajenos. 4) Al volver, el grupo cierra con el neto de la app. Lina anota si alguien recurre al Excel o a un cálculo propio en el chat.
 - **With whom:** todo el grupo de amigos de Lina que va al viaje del 14 nov (segmento: 20 a 26 años, solo amigos, varios pagadores). No hay reclutamiento: es el viaje real.
 - **Material needed:** 1) El mensaje de invitación: link, una línea de por qué ("para no hacer Excel") y nada más; deja fuera tutoriales, reglas sobre qué registrar e incentivos. 2) La hoja de captura por integrante: fecha y hora de entrada, número de gastos que registró, si su deuda se cerró con el neto de la app (sí/no), si se usó un cálculo paralelo (sí/no y dónde) y los recordatorios que Lina tuvo que dar.
-- **Material:**
+- **Material:** [mensaje-invitacion.md](materials/t1-splitwise-traido-por-organizadora/mensaje-invitacion.md) · [hoja-captura.md](materials/t1-splitwise-traido-por-organizadora/hoja-captura.md)
 - **Duration:** del envío del link (10 a 13 nov) al 21 nov.
 - **Signal and threshold:** a) todos los integrantes entraron a la app antes de terminar el día 2 (15 nov, 23:59); b) al 21 nov, todas las deudas se calcularon con el neto de la app, sin Excel ni un cálculo paralelo en el chat. Pasa solo si se cumplen a y b.
 - **Decision rule:** continue si se cumplen a y b · change si una sola persona no entró o hubo un solo cálculo paralelo, y el resto cerró en la app (la versión cambiada, por ejemplo armar el grupo en persona al salir, necesita su propia prueba) · discard si dos o más no entraron antes del día 2, o si el grupo cerró con Excel o con el chat. En ese caso se activa la evaluación de A4 y A5 según la causa (no quisieron instalar → A5; no registraron → A4).
