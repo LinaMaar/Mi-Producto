@@ -87,6 +87,7 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
     hasta cerrar las cuentas. Reemplaza la pregunta de la #3 (contradicted):
     si se cumple, construir una herramienta propia pierde sentido; si falla,
     se sabe por qué.
+    — weakened by [product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md] (2026-11-10, real): 5 de 6 entraron antes del día 2; el que no entró ("yo no me bajo más apps") pagó el neto por un pantallazo; las 6 deudas cerraron con la app, sin Excel
 12. [feature: splitwise-traido-por-organizadora] [value] Con la app en el
     viaje, los gastos chicos se registran y se recuperan dentro del neto: al
     21 nov, al menos 3 de cada 4 gastos chicos pagados por el grupo están en

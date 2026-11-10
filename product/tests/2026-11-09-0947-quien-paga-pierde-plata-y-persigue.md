@@ -1,7 +1,7 @@
 ---
 opportunity: quien-paga-pierde-plata-y-persigue
 solutions: product/solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md
-status: designed
+status: analyzed
 ---
 
 # Pruebas de solución para: Quien paga por el grupo pierde plata y desgaste recuperándola
@@ -19,7 +19,7 @@ Bajo prueba: A3, la organizadora trae Splitwise al viaje (`splitwise-traido-por-
 Definición de **gasto chico**: un gasto por el grupo cuya cuota por persona es menor a 20.000 (los casos reales fueron 9.000 y 15.000).
 
 ## T1. splitwise-traido-por-organizadora: adopción con Lina como organizadora
-- **Test status:** ready
+- **Test status:** analyzed
 - **Belief under test:** "Si Lina, como organizadora, trae una app gratuita para dividir gastos al viaje del 14 nov, todo el grupo entra y la usa hasta cerrar las cuentas." — overview #11
 - **Risk:** [viability]
 - **Test type:** field-trial
@@ -65,4 +65,20 @@ Definición de **gasto chico**: un gasto por el grupo cuya cuota por persona es 
 
 ## Resultados
 
+### T1 — `failed` · decisión: `change`
+- **Observado:** 5 de 6 entraron a la app antes de terminar el día 2 (8 nov, 23:59). Esteban no entró, ni después del único recordatorio por privado (7 nov). Al cierre dijo: "yo no me bajo más apps, con el pantallazo me sirve". Las 6 deudas cerraron con el neto de la app: 0 cálculos paralelos, 0 Excel. Esteban pagó su neto (86.000) el mismo día en que Natalia mandó al chat, sin que nadie se lo pidiera, un pantallazo de "Saldos". Gastos registrados: Lina 4, Natalia 3, Manuela 2, Isabel 1, Felipe 0, Esteban 0. Lina no cargó gastos ajenos y respondió con lo mínimo dos preguntas sobre cómo funciona la app.
+- **Con quién y cuántos:** el grupo completo del viaje, 6 personas del segmento. Del 5 nov (envío del link) al 10 nov (lectura).
+- **Procedencia:** real.
+- **Contra el umbral:** a) no se cumple (1 no entró); b) sí se cumple. La prueba pasa solo con a y b, así que es `failed`. La regla de decisión da `change`: una sola persona no entró y el resto cerró en la app.
+- **Desviaciones del diseño:** corrió en un viaje anterior (link el 5 nov, lectura el 10 nov) y no en el del 14 nov. El corte del día 2 se movió con el viaje (8 nov). El mensaje de invitación no fue el del material, que se armó el 10 nov. La lectura se hizo el 10 nov y no el 21, pero todas las deudas ya estaban cerradas. Nada de esto cambia cómo se leen a y b.
+- **Fuera de la señal (no cuenta para T2):** Felipe pagó unas cervezas (≈ 40.000, menos de 7.000 por persona, gasto chico) y no las registró: "las cervezas van por mí". Parece una invitación y no pena, pero T2 no corrió.
+- **Hoja:** [T1-hoja-captura-completa.md](materials/t1-splitwise-traido-por-organizadora/T1-hoja-captura-completa.md)
+
+### T2 — `not run`
+No se armó el material ni se llevó la bitácora de gastos chicos.
+
+### T3 — `not run`
+No se armó la hoja por par acreedor–deudor ni se hizo la pregunta de cierre.
+
 ## Decisión
+A3 (`splitwise-traido-por-organizadora`): `change` (2026-11-10). La app cerró todas las cuentas sin Excel, pero no todo el grupo entra. El único que no entró se negó a instalar; no fue un problema para unirse. Por eso el cambio no es armar el grupo en persona, sino no exigir que todos instalen: quienes pagan registran y el neto se comparte en el chat para quien no tenga la app. Esa versión cambia la #11 y necesita su propia prueba, porque el resultado aplica a lo que se probó. A4 y A5 siguen parked: la regla las activaba con dos o más personas fuera. A5 suma un indicio (un deudor que no instala) sin llegar a su condición. T2 y T3 quedan pendientes para el próximo viaje.
