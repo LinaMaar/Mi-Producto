@@ -7,7 +7,7 @@ Mensaje de invitación: el mismo del T1 (materials/t1-splitwise-traido-por-organ
 ## Antes de empezar
 - Fecha y hora de envío del link: ____________
 - Número de integrantes del viaje: ____
-- Día del regreso (cierre): ____________
+- Día del regreso (cierre): 15 nov
 - Sesgo declarado: Lina es organizadora, sponsor y observadora.
 
 ## Por integrante
@@ -48,7 +48,7 @@ no van en esta tabla. Anótalas en "Notas".
 - Quién lo mandó: ____________ · Fecha y hora: ____________
 - ¿Lo tuvo que mandar Lina porque nadie lo hizo? sí / no · Fecha y hora: ____________
 
-## Lectura al 21 nov
+## Lectura al 16 nov
 - ¿Hubo al menos una persona sin la app? sí / no → si **no**: `inconclusive` (la #15 no se puso a prueba; el dato se anota para la #11)
 - a) ¿Todas las deudas se calcularon con el neto de la app, incluidas las de quienes no la tienen? sí / no · Deudas fuera del neto: ____
 - b) Gastos grandes fuera del neto porque quien los pagó no tenía la app: ____ · Gastos ajenos que registró Lina: ____ (¿ambos en cero? sí / no)

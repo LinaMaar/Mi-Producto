@@ -33,7 +33,7 @@ actualizaron.
 
 Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 
-**Orden de ataque (actualizado 2026-11-09; los números no cambian para no romper referencias):** #11, #12, #9, #13, #14, #8, #10, #1, #2, #6, #7 (#12 a #14 se prueban junto con la #11 en el viaje del 14 nov). Resueltas, fuera del orden: #3 (contradicted), #4 (confirmed), #5 (contradicted; la reemplaza la #10).
+**Orden de ataque (actualizado 2026-11-11; los números no cambian para no romper referencias):** #15, #12, #9, #13, #14, #11, #8, #10, #1, #2, #6, #7 (#12 a #15 se prueban en el viaje del 14 nov). Resueltas, fuera del orden: #3 (contradicted), #4 (confirmed), #5 (contradicted; la reemplaza la #10).
 
 1. [product] [value] Durante un viaje, cada amigo registrará por su cuenta lo
    que compró para el grupo y marcará sus pagos, sin que Lina tenga que
@@ -100,3 +100,10 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
 14. [feature: splitwise-traido-por-organizadora] [viability] Lina solo
     registra lo que ella pagó: no carga gastos ajenos ni revisa quién
     actualizó. Origen: ídem.
+15. [feature: splitwise-traido-por-organizadora] [viability] Aunque no todos
+    instalen la app, quienes pagan registran lo suyo y quien no la tiene paga
+    el neto que se comparte en el chat: todas las deudas cierran con el neto
+    de la app, sin Excel ni cálculo paralelo, y ningún gasto del grupo queda
+    fuera porque quien lo pagó no tenía la app. Origen: `change` del T1
+    (product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md,
+    2026-11-10).

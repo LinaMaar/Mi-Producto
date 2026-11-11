@@ -1,5 +1,4 @@
-# T2 y T3 · Tarjeta de preguntas de cierre (21 nov)
-
+# T2 y T3 · Tarjeta de preguntas de cierre (16 nov)
 Una conversación por privado con cada persona que pagó algo por el grupo.
 Lee las preguntas tal cual. No preguntes qué opinan de la app ni sugieras respuestas.
 Si dicen "no sé" o "nada", anótalo así y pasa a la siguiente.

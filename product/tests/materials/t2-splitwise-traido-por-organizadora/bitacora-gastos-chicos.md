@@ -23,7 +23,7 @@ cierre, cruzando con los gastos de la app.
 | 7 | | | | | | | bitácora | |
 | 8 | | | | | | | bitácora | |
 
-El 21 nov, agrega abajo los gastos chicos que salgan de la pregunta de cierre
+El 16 nov, agrega abajo los gastos chicos que salgan de la pregunta de cierre
 (origen: "pregunta de cierre"), si no estaban ya en la tabla.
 
 ## Invitaciones (anunciadas en el momento; no cuentan en el total)
@@ -33,7 +33,7 @@ El 21 nov, agrega abajo los gastos chicos que salgan de la pregunta de cierre
 | | | | | |
 | | | | | |
 
-## Lectura al 21 nov
+## Lectura al 16 nov
 - Gastos chicos en la app: ____ · Gastos chicos totales: ____ · a) proporción: ____ (¿≥ 3/4? sí / no)
 - b) Pagadores que dijeron haber dejado un gasto chico por fuera **por pena**: ____ (¿cero? sí / no)
 
