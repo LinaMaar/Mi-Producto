@@ -30,7 +30,7 @@ Antes del viaje, pídele a alguien que no seas tú que lo mande cada noche:
 
 El mensaje de cada noche:
 
-> Anoten lo de hoy en Splitwise, hasta lo chico (hielo, mecato, propinas) 🧾
+> Anoten lo de hoy en Splitwise, hasta lo chico (hielo, mecato, propinas). Lo chico no se cobra suelto: se suma a lo que cada uno pone al final 🧾
 
 ## 4. Cobro privado (al cerrar, de cada acreedor a cada deudor)
 Después de que alguien mande el pantallazo de "Saldos" al chat, cada acreedor le escribe **una sola vez** a cada deudor, por privado:

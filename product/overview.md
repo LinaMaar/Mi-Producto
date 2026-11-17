@@ -29,6 +29,10 @@ fin sin volver al Excel, con cada persona registrando sus gastos y marcando sus
 pagos. Lo suelta si le toca a ella cargar todo y revisar si los demás
 actualizaron.
 
+## Decisión de producto (2026-11-17)
+
+Lina decidió no construir una herramienta propia. El grupo usa Splitwise con la forma de organizar que describe [product/specs/2026-11-17-1645-splitwise-traido-por-organizadora.md]. En el T4 se cumplió el criterio de continuidad: el grupo cerró todo con la app, sin Excel, y Lina no cargó gastos ajenos. La #3 quedó contradicted. No habrá más salidas de prueba; las creencias #16, #17 y #18 quedan abiertas.
+
 ## Creencias no verificadas
 
 Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
@@ -93,10 +97,12 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
     21 nov, al menos 3 de cada 4 gastos chicos pagados por el grupo están en
     la app, y ningún pagador dice haber dejado uno sin cobrar por pena.
     Origen: product/solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md
+    — weakened by [product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md] (2026-11-17, real): 4 de 7 gastos chicos quedaron en la app; los 3 de fuera fueron por pena (helados, "qué oso"), olvido y "no valía la pena"
 13. [feature: splitwise-traido-por-organizadora] [value] Con el neto y los
     recordatorios de la app, ningún pagador tiene que escribir más de un cobro
     a un mismo deudor: al 21 nov, todos los deudores pagaron sin un segundo
     mensaje escrito por el pagador. Origen: ídem.
+    — weakened by [product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md] (2026-11-17, real): 4 de 5 pares pagaron el mismo día sin cobro; a Felipe (312.000) Lina le escribió dos veces, antes de que actuaran los recordatorios de la app
 14. [feature: splitwise-traido-por-organizadora] [viability] Lina solo
     registra lo que ella pagó: no carga gastos ajenos ni revisa quién
     actualizó. Origen: ídem.
@@ -107,3 +113,19 @@ Ordenadas por impacto × incertidumbre: la primera es la siguiente a atacar.
     fuera porque quien lo pagó no tenía la app. Origen: `change` del T1
     (product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md,
     2026-11-10).
+    — confirmed by [product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md] (2026-11-17, real): 1 de 6 no instaló y pagó con el pantallazo; las 6 deudas cerraron con el neto, sin Excel; su único gasto grande (132.000) lo registró otra integrante. Límite: un solo caso, y dependió de que alguien lo registrara por él
+16. [feature: splitwise-traido-por-organizadora] [value] Con un cierre diario
+    de "anoten lo de hoy" que manda al chat un integrante que no sea Lina, y
+    que dice que lo chico no se cobra suelto sino que se suma a lo que cada
+    uno pone al final, al menos 3 de cada 4 gastos chicos quedan en la app al
+    cierre y ningún pagador deja uno fuera por pena. Origen: `change` del T2
+    (product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md,
+    2026-11-17); la línea del total se agregó por /clarify-idea (2026-11-17).
+17. [feature: splitwise-traido-por-organizadora] [value] Si al cerrar cada
+    acreedor le manda a cada deudor por privado un solo cobro completo
+    (nombre, monto del neto y cuenta), todos los deudores pagan sin un
+    segundo mensaje del acreedor. Origen: `change` del T3 (ídem, 2026-11-17).
+18. [feature: splitwise-traido-por-organizadora] [viability] Si otra persona
+    del grupo organiza y crea el grupo en la app, el grupo la usa igual que
+    cuando la trae Lina: todas las deudas cierran con el neto, sin Excel.
+    Origen: paso siguiente del T4 (ídem, 2026-11-17).

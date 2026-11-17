@@ -29,7 +29,7 @@ Propuesta de valor y lo que reemplaza: ver product/solutions/2026-11-09-0939-qui
 1. **Disparador.** Se arma el viaje. Antes de salir, la organizadora manda al chat el link del grupo en Splitwise con una sola línea: "para no hacer Excel". (T1, T4)
 2. **Entrar.** Luisa entra desde el link. A quien no ha entrado le llega un solo recordatorio por privado. Si no quiere instalar, nadie insiste. (T4: 5 de 6 entraron)
 3. **Lo grande.** Luisa paga el mercado y lo registra en el momento. Si quien paga algo, grande o chico, no tiene la app, lo manda al chat y lo registra alguien que sí la tenga, y ese alguien no es la organizadora. (T4 lo vio con un gasto grande: Esteban le pidió a Natalia; con lo chico, no probado)
-4. **Lo chico.** Luisa paga el hielo. Aquí es donde hoy se pierde: 3 de 7 gastos chicos quedaron fuera (T2). Cada noche, el integrante que quedó nombrado antes del viaje, que nunca es la organizadora, escribe en el chat "anoten lo de hoy", y Luisa mete lo chico. *(no probado)*
+4. **Lo chico.** Luisa paga el hielo. Aquí es donde hoy se pierde: 3 de 7 gastos chicos quedaron fuera (T2). Cada noche, el integrante que quedó nombrado antes del viaje, que nunca es la organizadora, escribe en el chat "anoten lo de hoy", y Luisa mete lo chico. El mensaje le recuerda que lo chico no se cobra suelto: se suma a lo que cada uno pone al final. *(no probado)*
 5. **Cierre.** El día del regreso, el grupo cierra en la app. Alguien manda al chat el pantallazo de "Saldos", y si nadie lo hace en 24 h, la organizadora lo manda una vez. Quien no tiene la app conoce su neto por ese pantallazo. (T4)
 6. **Cobro.** Como acreedora, Luisa le manda a cada deudor por privado un solo cobro completo, con nombre, monto del neto y cuenta. Lo copia de un mensaje armado con lo que sale en "Saldos", sin escribirlo desde cero. *(no probado; viene del insight 2 de las entrevistas reales)*
 7. **Resultado.** Aquí está el valor: Luisa recupera todo, incluido lo chico, el mismo día o al siguiente, sin escribirle dos veces a nadie y sin Excel. La organizadora no cargó gastos ajenos.
@@ -65,6 +65,7 @@ Como Luisa, quiero que lo chico que pago entre al neto sin tener que cobrarlo ap
 Criterios de aceptación:
 - [ ] Antes del viaje queda nombrado quién manda cada noche "anoten lo de hoy", y no es la organizadora.
 - [ ] Cada noche del viaje, esa persona manda el mensaje al chat.
+- [ ] El mensaje de cada noche dice que lo chico no se cobra suelto, sino que se suma a lo que cada uno pone al final.
 - [ ] Los gastos con cuota por persona menor a 20.000 se registran en la app el día en que se pagaron.
 - [ ] Al cierre, al menos 3 de cada 4 gastos chicos están en la app.
 - [ ] Caso borde: un gasto que quien lo paga anuncia en el momento como invitación ("van por mí") no se registra y no cuenta.
@@ -105,6 +106,7 @@ Probado en: product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md
 - Cobro individual completo al cerrar (historia 4) — not tested (declared). Es el `change` del T3.
 - Una salida en la que Lina no crea el grupo — not tested (declared). Es el paso siguiente del T4.
 - Gastos chicos de quien no tiene la app (historia 2) — not tested (declared). Amplía lo que probó el T4, que solo lo vio con un gasto grande; no cambia su mecanismo. Viene de la crítica sintética.
+- Línea "lo chico se suma al total" en el mensaje de cada noche (historia 3) — not tested (declared). Viene de /clarify-idea (2026-11-17), por la pena del T2.
 - Lo que probó el T4 (mecanismo, quién hace qué, segmento) no cambia en este spec, así que su resultado sigue aplicando.
 - Decisión de Lina (2026-11-17): no habrá más salidas de prueba. El spec queda con la evidencia del viaje del 14 al 15 nov, y las piezas no probadas siguen como supuestos abiertos (#16, #17 y #18).
 
@@ -116,6 +118,6 @@ Referencias a product/overview.md (registro único).
 - [feature: splitwise-traido-por-organizadora] [value] Ningún pagador escribe más de un cobro a un mismo deudor. — overview #13 (weakened, en la versión sin cobro privado)
 - [feature: splitwise-traido-por-organizadora] [viability] Lina solo registra lo que ella pagó. — overview #14
 - [feature: splitwise-traido-por-organizadora] [viability] Aunque no todos instalen, todas las deudas cierran con el neto. — overview #15 (confirmed, un caso)
-- [feature: splitwise-traido-por-organizadora] [value] Cierre diario de "anoten lo de hoy" → al menos 3 de cada 4 gastos chicos en la app, sin pena. — overview #16
+- [feature: splitwise-traido-por-organizadora] [value] Cierre diario de "anoten lo de hoy", con la línea de que lo chico se suma al total → al menos 3 de cada 4 gastos chicos en la app, sin pena. — overview #16
 - [feature: splitwise-traido-por-organizadora] [value] Un solo cobro privado completo por deudor → nadie necesita un segundo mensaje. — overview #17
 - [feature: splitwise-traido-por-organizadora] [viability] Sin Lina armando el grupo, el uso se sostiene. — overview #18

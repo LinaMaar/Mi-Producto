@@ -1,7 +1,7 @@
 ---
 opportunity: quien-paga-pierde-plata-y-persigue
 solutions: product/solutions/2026-11-09-0939-quien-paga-pierde-plata-y-persigue.md
-status: ready
+status: analyzed
 ---
 
 # Pruebas de solución para: Quien paga por el grupo pierde plata y desgaste recuperándola
@@ -40,7 +40,7 @@ Definición de **invitación** (aclarada el 2026-11-11, antes del viaje, por dec
 - **Next step if it passes:** repetir en una segunda salida del grupo donde Lina no cree el grupo en la app, para ver si el uso se sostiene sin ella y si deja de depender de quién organiza.
 
 ## T2. splitwise-traido-por-organizadora: los gastos chicos entran a la app
-- **Test status:** ready
+- **Test status:** analyzed
 - **Belief under test:** "Con la app en el viaje, los gastos chicos se registran y se recuperan dentro del neto: al 21 nov, al menos 3 de cada 4 gastos chicos pagados por el grupo están en la app, y ningún pagador dice haber dejado uno sin cobrar por pena." — overview #12
 - **Risk:** [value]
 - **Test type:** field-trial
@@ -55,7 +55,7 @@ Definición de **invitación** (aclarada el 2026-11-11, antes del viaje, por dec
 - **Next step if it passes:** ver si el resultado se repite en la salida del paso siguiente del T1.
 
 ## T3. splitwise-traido-por-organizadora: nadie cobra dos veces
-- **Test status:** ready
+- **Test status:** analyzed
 - **Belief under test:** "Con el neto y los recordatorios de la app, ningún pagador tiene que escribir más de un cobro a un mismo deudor: al 21 nov, todos los deudores pagaron sin un segundo mensaje escrito por el pagador." — overview #13
 - **Risk:** [value]
 - **Test type:** field-trial
@@ -70,7 +70,7 @@ Definición de **invitación** (aclarada el 2026-11-11, antes del viaje, por dec
 - **Next step if it passes:** ver si el resultado se repite en la salida del paso siguiente del T1.
 
 ## T4. splitwise-traido-por-organizadora: no todos instalan, el neto va al chat
-- **Test status:** ready
+- **Test status:** analyzed
 - **Belief under test:** "Aunque no todos instalen la app, quienes pagan registran lo suyo y quien no la tiene paga el neto que se comparte en el chat: todas las deudas cierran con el neto de la app, sin Excel ni cálculo paralelo, y ningún gasto del grupo queda fuera porque quien lo pagó no tenía la app." — overview #15
 - **Risk:** [viability]
 - **Test type:** field-trial
@@ -95,11 +95,33 @@ Definición de **invitación** (aclarada el 2026-11-11, antes del viaje, por dec
 - **Fuera de la señal (no cuenta para T2):** Felipe pagó unas cervezas (≈ 40.000, menos de 7.000 por persona, gasto chico) y no las registró: "las cervezas van por mí". Parece una invitación y no pena, pero T2 no corrió.
 - **Hoja:** [T1-hoja-captura-completa.md](materials/t1-splitwise-traido-por-organizadora/T1-hoja-captura-completa.md)
 
-### T2 — `not run`
-No se armó el material ni se llevó la bitácora de gastos chicos.
+### T2 — `failed` · decisión: `change`
+- **Observado:** 7 gastos chicos: 6 en la bitácora y 1 que salió de la pregunta de cierre. 4 quedaron en la app: el parqueadero de Lina, el pan y los huevos y la propina de Natalia, y el mecato de Manuela. Quedaron fuera: el hielo y agua de Felipe (24.000, "no valía la pena"), los helados de Isabel (54.000, "Qué oso cobrar helados", pena) y el hielo de Manuela (12.000, "se me olvidó por completo", olvido). Las cervezas de Felipe (≈ 48.000, "estas van por mí") se anotaron en el momento como invitación y no cuentan.
+- **Con quién y cuántos:** el grupo completo del viaje, 6 personas del segmento. Las 6 respondieron la pregunta de cierre. Del 14 al 16 nov.
+- **Procedencia:** real.
+- **Contra el umbral:** a) 4/7 ≈ 0,57, no llega a 3/4; b) 1 pagadora (Isabel) lo dejó por pena. Resultado `failed`. La regla da `change`: a queda entre 1/2 y 3/4 y un solo pagador lo dejó por pena. No es `discard`, porque a ≥ 1/2.
+- **Desviaciones del diseño:** las preguntas de cierre se hicieron la noche del 15 nov y no el 16. No cambia cómo se leen a y b.
+- **Fuera de la señal:** Felipe entró a la app pero registró 0 gastos. De los 3 gastos que quedaron fuera, solo 1 fue por pena; los otros fueron olvido y "no valía la pena".
+- **Hojas:** [T2-bitacora-gastos-chicos.md](materials/t2-splitwise-traido-por-organizadora/T2-bitacora-gastos-chicos.md) · [T2-T3-tarjeta-preguntas-cierre.md](materials/t2-splitwise-traido-por-organizadora/T2-T3-tarjeta-preguntas-cierre.md)
 
-### T3 — `not run`
-No se armó la hoja por par acreedor–deudor ni se hizo la pregunta de cierre.
+### T3 — `failed` · decisión: `change`
+- **Observado:** 5 pares en el neto (cierre en la app: 15 nov, 20:30). Los 5 pagaron el 15 nov, entre las 21:40 y las 23:35. 4 pares pagaron sin ningún mensaje de cobro; 3 de ellos, después del pantallazo de "Saldos" que mandó Natalia ("para que vean cuánto quedó"), que no pedía pago. Lina–Felipe (312.000) necesitó 2 mensajes: uno en el grupo a las 21:00 ("Felipe, cuando puedas lo tuyo 🙏") y otro por privado a las 23:00. Felipe pagó a las 23:35 ("uy perdón, ya").
+- **Con quién y cuántos:** los 2 acreedores del neto (Lina y Natalia), con 5 pares.
+- **Procedencia:** real.
+- **Contra el umbral:** a) sí, 5 de 5 pagados al 16 nov; b) no, 1 par con segundo mensaje. Resultado `failed`. La regla da `change`, porque 1 de 5 (20 %) no supera 1 de cada 4. No aplica el `inconclusive`, porque no quedaron pares sin pagar.
+- **Desviaciones del diseño:** la pregunta 2 se hizo la noche del 15 nov y no el 16.
+- **Para leer con cuidado:** el único segundo mensaje lo escribió Lina, que es acreedora y observadora. Lo mandó a los 30 min y a las 2 h 30 del cierre, antes de que los recordatorios de la app tuvieran tiempo de actuar. Según la regla cuenta, pero la prueba no dice si la app habría cobrado sola. El deudor es Felipe, el mismo que no registró ningún gasto.
+- **Hojas:** [T3-hoja-pares.md](materials/t3-splitwise-traido-por-organizadora/T3-hoja-pares.md) · [T2-T3-tarjeta-preguntas-cierre.md](materials/t2-splitwise-traido-por-organizadora/T2-T3-tarjeta-preguntas-cierre.md)
+
+### T4 — `passed` · decisión: `continue`
+- **Observado:** 5 de 6 entraron a la app entre el 13 nov a las 19:58 y el 14 nov a las 10:30. Esteban no entró, ni después del único recordatorio (14 nov, 18:05): "yo no me bajo más apps, con el pantallazo me sirve". Hubo 5 gastos grandes y los 5 quedaron en la app. El único de alguien sin la app, la gasolina y los peajes de Esteban (132.000), lo registró Natalia porque Esteban se lo pidió ("Nata, ¿tú metes lo de la gasolina, que yo no tengo eso?"). Lina no registró gastos ajenos. Las 6 deudas se calcularon con el neto de la app: 0 Excel y 0 cálculos paralelos. Natalia mandó el pantallazo de "Saldos" el 15 nov a las 21:30, sin que Lina tuviera que hacerlo. Esteban e Isabel conocieron su neto por el pantallazo y Felipe por el mensaje de Lina.
+- **Con quién y cuántos:** el grupo completo, 6 personas del segmento. Del 13 nov (link) al 16 nov.
+- **Procedencia:** real.
+- **Contra el umbral:** a) sí; b) sí, y se puso a prueba: una persona sin la app pagó un gasto grande. Resultado `passed`. La regla da `continue`.
+- **Límite:** pasó porque otra integrante con la app registró el gasto de Esteban. Ese mecanismo no estaba en el diseño, que lo proponía como versión cambiada. Es un solo caso.
+- **Hoja:** [T4-hoja-captura.md](materials/t4-splitwise-traido-por-organizadora/T4-hoja-captura.md)
 
 ## Decisión
 A3 (`splitwise-traido-por-organizadora`): `change` (2026-11-10). La app cerró todas las cuentas sin Excel, pero no todo el grupo entra. El único que no entró se negó a instalar; no fue un problema para unirse. Por eso el cambio no es armar el grupo en persona, sino no exigir que todos instalen: quienes pagan registran y el neto se comparte en el chat para quien no tenga la app. Esa versión cambia la #11 y necesita su propia prueba, porque el resultado aplica a lo que se probó. A4 y A5 siguen parked: la regla las activaba con dos o más personas fuera. A5 suma un indicio (un deudor que no instala) sin llegar a su condición. T2 y T3 quedan pendientes para el próximo viaje.
+
+A3, versión cambiada (2026-11-17): `continue` en adopción y cierre (T4). Con 1 de 6 sin la app, todas las deudas cerraron con el neto, y el gasto grande de quien no la tenía entró porque otra integrante lo registró. Todavía no está lista para spec: falta el paso siguiente del T4, una salida donde Lina no cree el grupo. En gastos chicos (T2) y cobro (T3) el resultado es `change`. La app no recoge lo chico (3 de 7 quedaron fuera, por tres razones distintas) y no quita toda la persecución (1 de 5 pares, el del deudor que no registró nada). Cada versión cambiada necesita su propia prueba: para T2, un cierre diario de "anoten lo de hoy" a cargo de otro integrante, no de Lina; para T3, al cerrar, un cobro individual completo a cada deudor con la plantilla de A2. Las dos se pueden combinar en la misma salida del paso siguiente del T4. A4 y A5 siguen parked: la regla del T2 no activa A4 porque a ≥ 1/2, y el T4 mostró que quien no instala no bloquea el cierre.
