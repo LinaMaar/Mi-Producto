@@ -1,68 +1,66 @@
 ---
 spec: product/specs/2026-11-17-1645-splitwise-traido-por-organizadora.md
 exposure-plan: product/exposure-plans/2026-11-17-1725-splitwise-traido-por-organizadora.md
-level: 2 — + "Anoten lo de hoy"
+level: 1 — La app y el neto en el chat
 status: designed
 ---
 
 # Métricas para: Splitwise traído por la organizadora
 
-> No hay software propio: los "eventos" son registros que se pueden revisar después (actividad del grupo en Splitwise, chat del viaje, bitácora de gastos chicos, formulario de cierre). La audiencia es de ~5 personas por viaje: cada persona pesa 15–20 % y toda lectura es direccional. No hay viajes planeados (decisión de Lina, 2026-11-17); este archivo queda listo para el próximo.
+> Revisado el 2026-11-24 para el nivel 1. La versión del nivel 2 está en el commit 61af6c1.
+> No hay software propio: los "eventos" son registros que se pueden revisar después (miembros y actividad del grupo en Splitwise, chat del viaje, hoja de captura, formulario de cierre). La audiencia es de ~6 personas por viaje: cada persona pesa ~17 % y toda lectura es direccional. El nivel 1 ya quedó validado por el T4 (real); sus resultados son la línea base.
 
 ## Audiencia objetivo
-Las personas del viaje que pagaron al menos un gasto chico por el grupo (cuota por persona < 20.000; las invitaciones anunciadas en el momento, "van por mí", no cuentan), tengan o no la app. Se identifican con la bitácora de gastos chicos más la pregunta de cierre, como en el T2. Fuente: segmento del overview (grupo de amigos de Lina, 20 a 26 años, varios pagadores) acotado a la audiencia del nivel 2 (todo el grupo del viaje), y dentro de ella a quien paga lo chico, que es de quien trata la #16. El grupo completo se reporta como contexto.
-Tamaño esperado: ~5 (en el T2, 5 de 6 pagaron algo chico).
-Quién inicia y quién participa: la organizadora y quien manda "anoten lo de hoy" inician; solo entran al denominador si también pagaron algo chico. Lo que hace cada una se lee en la conciliación.
+Todos los integrantes de un viaje que organiza Lina, contados por persona, tengan o no la app. Fuente: segmento del overview (grupo de amigos de Lina, 20 a 26 años, varios pagadores) y audiencia del nivel 1 del plan ("todo el grupo de un viaje que organiza Lina"). Tamaño: ~6 (T4: 6).
+Quién inicia y quién participa: la organizadora inicia (crea el grupo y manda el link). Los participantes tienen dos papeles que se leen por separado en activation: el pagador (registra lo que puso) y el deudor (cierra su deuda con el neto, con o sin la app).
 
 ## Frecuencia esperada
-- Dentro del viaje: diaria. En el T2 hubo 7 gastos chicos repartidos en los 2 días (product/tests/materials/t2-splitwise-traido-por-organizadora/T2-bitacora-gastos-chicos.md), y el mecanismo del nivel es un mensaje cada noche.
+- Dentro del viaje: diaria. En el T4 hubo 5 gastos grandes en 2 días (product/tests/2026-11-09-0947-quien-paga-pierde-plata-y-persigue.md, T4).
 - Entre viajes: `assumption`. No hay medición real; hubo dos viajes en noviembre (T1 y el del 14–15), y "uno o dos al año" sale de una persona sintética (Camilo).
 Ventana de retención: por día de viaje.
 
 ## Acquisition
-- **Señal:** la persona tiene al menos un gasto suyo, de cualquier tamaño, registrado en Splitwise durante el viaje.
-- **Definición ampliada:** cuenta si lo registró ella o si lo registró otro integrante con "pagado por" a su nombre (historia 2). No cuenta si lo registró la organizadora por ella (#14). Haber entrado al grupo o haber leído el mensaje de la noche no cuenta.
-- **Cálculo:** pagadores de gastos chicos con ≥ 1 gasto propio en la app / pagadores de gastos chicos, del envío del link al cierre.
-- **Meta:** 100 % (p. ej. 5 de 5) · **Por qué:** el nivel 2 incluye todo el nivel 1, y la condición para avanzar en el nivel 1 es que ningún gasto quede fuera del neto; un pagador sin nada en la app es justo ese caso (Felipe en el T2).
-- **Registros necesarios:** actividad de Splitwise, por cada gasto: quién lo creó, "pagado por", monto, número de personas, fecha del gasto, fecha y hora de creación. Bitácora: quién pagó cada gasto chico.
+- **Señal:** la persona entra al grupo de Splitwise desde el link o, si no tiene la app, conoce su neto por el pantallazo de "Saldos" que llega al chat.
+- **Definición ampliada:** lo de la app cuenta si entró antes de terminar el día 2 del viaje (corte del T1); lo del pantallazo, si llegó al chat en las 24 h siguientes al regreso. Haber recibido el link no basta. Se reporta aparte cuántos llegaron por la app y cuántos solo por el pantallazo.
+- **Cálculo:** integrantes que entraron a la app o recibieron su neto por el pantallazo / integrantes del viaje, del envío del link a 24 h después del regreso.
+- **Meta:** 100 % (6 de 6) · **Por qué:** el nivel 1 acepta que no todos instalen, pero nadie puede quedarse sin su neto: su deuda quedaría fuera, que es la condición de parada del plan. Línea base T4: 6 de 6 (5 por la app, 1 por el pantallazo).
+- **Registros necesarios:** miembros del grupo en Splitwise con fecha y hora de entrada; el recordatorio único por privado (a quién, cuándo); hora y autor del pantallazo de "Saldos" en el chat.
 
 ## Activation
-- **Señal:** al cierre, la persona tiene en la app al menos 3 de cada 4 de sus gastos chicos y no dejó ninguno fuera por pena.
-- **Definición ampliada:** el corte es el pantallazo de "Saldos"; lo que se registra después no cuenta. Cuenta el gasto chico que registró ella o que registró otro integrante a su nombre que no sea la organizadora. El total de gastos chicos de cada persona sale de la bitácora más su respuesta a la pregunta de cierre. Las invitaciones no entran ni en el numerador ni en el denominador.
-- **Umbral de la señal:** ≥ 3/4 de sus gastos chicos en la app y cero dejados por pena · **Por qué:** es la cláusula de refutación del spec y la #16, aplicadas a cada persona; con 1 a 3 gastos chicos equivale a "todos", y desde 4 permite que falte uno por olvido · **Excluye:** a quien registró lo grande pero dejó lo chico fuera (solo cuenta en acquisition), a quien registró lo chico después del cierre y a quien dejó cualquier gasto chico fuera por pena.
-- **Cálculo:** pagadores de gastos chicos que cumplen el umbral / pagadores de gastos chicos, al momento del pantallazo de "Saldos".
-- **Meta:** ≥ 75 % (p. ej. 4 de 5) y 0 personas no activadas por pena · **Por qué:** es el mismo 3/4 de la hipótesis. Se permite una persona por debajo solo por olvido o por "no valía la pena"; la pena es una condición de parada del plan. Línea base del T2 (nivel 1, sin el mensaje de la noche): 2 de 5 (40 %).
-- **Lectura complementaria (no es AARS, la exige el plan):** gastos chicos en la app / gastos chicos totales, por gasto. Línea base del T2: 4/7 (57 %).
-- **Registros necesarios:** actividad de Splitwise (quién creó cada gasto, "pagado por", monto, número de personas, fecha y hora de creación); bitácora de gastos chicos (quién, qué, monto, personas, día, si es invitación); pregunta de cierre por privado ("¿Pagaste algo por el grupo que no quedó en la app? ¿Qué fue y por qué no lo metiste?", con la razón codificada como pena, olvido, "no valía la pena" u otra); hora del pantallazo de "Saldos". Sin bitácora, lo que queda fuera solo se conoce por la pregunta de cierre: alguien tiene que llevarla.
+- **Señal:** la deuda o el crédito de la persona se cerró con el neto de la app, sin Excel ni cálculo en el chat; si además es pagador, todos sus gastos grandes están en la app.
+- **Definición ampliada:** gasto grande = cuota por persona ≥ 20.000. Cuenta el gasto registrado por el propio pagador o por otro integrante con "pagado por" a su nombre que no sea la organizadora (historia 2). Las invitaciones anunciadas en el momento no cuentan. Se leen por separado pagadores y deudores.
+- **Umbral de la señal:** cerró con el neto de la app y, si pagó, sin gastos grandes fuera · **Por qué:** entrar a la app no es el valor; en el T4, Esteban no instaló y pagó con el pantallazo. El valor es que la cuenta salga completa del neto, y un gasto fuera daña el neto de todos. Viene de la cláusula de refutación del spec ("alguna deuda se calcula fuera del neto de la app") y del criterio de avance del plan · **Excluye:** a quien entró a la app pero cuya deuda se recalculó en el chat o en Excel; al pagador con un gasto grande fuera; los gastos que registró la organizadora por otra persona.
+- **Cálculo:** integrantes que cumplen el umbral / integrantes del viaje, 24 h después del regreso.
+- **Meta:** 100 % (6 de 6) · **Por qué:** es el criterio de avance del nivel (ninguna deuda fuera del neto, ningún gasto de quien no tiene la app fuera). Línea base T4: 6 de 6; una meta más baja permitiría retroceder.
+- **Registros necesarios:** actividad de Splitwise (quién creó cada gasto, "pagado por", monto, número de personas); hoja de captura por integrante (gastos grandes que pagó y si quedaron en la app, cómo conoció su neto, si su deuda se calculó con el neto, si hubo cálculo paralelo y dónde); chat del viaje (cálculos o Excel compartidos).
 
 ## Retention
-- **Señal:** cada día en que la persona pagó algo chico, ese gasto quedó en la app la misma noche, por día de viaje.
-- **Definición ampliada:** "la misma noche" = creado en Splitwise antes de las 06:00 del día siguiente, según la fecha de creación de la actividad (no la fecha del gasto, que se puede editar). Es recurrente quien lo cumple todos los días en que pagó algo chico, sea uno o varios. Cuenta el registro hecho por otro integrante a su nombre que no sea la organizadora.
-- **Curva de retención:** una cohorte por día del viaje (los pagadores de gastos chicos de ese día) y el % que lo registró esa misma noche. Si la curva baja de la primera noche a la última, el efecto del mensaje se gasta; si se mantiene, el hábito se sostiene. Con 2 o 3 días y ~5 personas, la lectura es direccional.
-- **Cálculo:** pagadores de gastos chicos que registraron la misma noche todos los días en que pagaron / pagadores de gastos chicos, durante el viaje.
-- **Meta:** ≥ 60 % (p. ej. 3 de 5) y la curva no baja de la primera noche a la última · **Por qué:** es más estricta que la activación (exige el mismo día, no solo estar al cierre), por eso va un escalón por debajo. El plan no tiene criterio de mismo día. Sin línea base: en el T2 no se anotó la hora de creación.
-- **Lectura posterior, entre viajes:** de los activados en este viaje, cuántos registran lo suyo en el siguiente. `not computable` hasta que haya otro viaje; la frecuencia entre viajes es `assumption`, y si organiza otra persona se mezcla con la #18.
-- **Registros necesarios:** fecha y hora de creación y quién creó cada gasto (del historial de actividad de Splitwise; la exportación CSV solo trae la fecha del gasto); día de pago de cada gasto chico (bitácora); hora de cada mensaje "anoten lo de hoy" (chat).
+- **Señal:** cada día en que la persona pagó un gasto grande, ese gasto quedó en la app la misma noche, por día de viaje.
+- **Definición ampliada:** "la misma noche" = creado en Splitwise antes de las 06:00 del día siguiente, según la fecha de creación de la actividad (no la fecha del gasto, que se puede editar). Es recurrente quien lo cumple todos los días en que pagó algo grande. Cuenta el registro hecho por otro integrante a su nombre que no sea la organizadora. Viene del criterio de la historia 2: "queda registrado en la app el mismo día".
+- **Curva de retención:** una cohorte por día del viaje (quienes pagaron algo grande ese día) y el % que lo registró esa misma noche. Con 2 o 3 días y ~6 personas, la lectura es direccional.
+- **Cálculo:** integrantes que registraron la misma noche todos los gastos grandes que pagaron / integrantes del viaje, durante el viaje.
+- **Meta:** ≥ 67 % (4 de 6) y la curva no baja de la primera noche a la última · **Por qué:** no todos pagan algo grande (quien no paga nada grande no puede contar), así que la meta queda por debajo de la activación. El plan no tiene criterio de mismo día. Sin línea base: en el T4 no se anotó la hora de creación. Riesgo conocido: la versión gratis de Splitwise limita los gastos por día (12 de 32 reseñas públicas, product/data/2026-11-24-resenas-publicas-splitwise.md); si alguien choca con el límite, se anota, porque bajaría esta métrica por una causa externa.
+- **Lectura posterior, entre viajes:** de los activados en este viaje, cuántos usan la app en el siguiente. `not computable` hasta que haya otro viaje; si organiza otra persona, se mezcla con la #18.
+- **Registros necesarios:** fecha y hora de creación y quién creó cada gasto (historial de actividad de Splitwise; la exportación CSV solo trae la fecha del gasto); día en que se pagó cada gasto grande (hoja de captura); avisos de límite diario de la app, si aparecen.
 
 ## Satisfaction
-- **Instrumento:** CSAT de 1 a 5 en un formulario corto (Google Forms, solo un link) con nombre y una pregunta abierta opcional; lo manda al chat alguien que no sea Lina, de preferencia quien mandó "anoten lo de hoy" · **Pregunta:** "Del 1 al 5, ¿qué tan bien te funcionó cómo se manejaron los gastos chicos en este viaje (anotarlos cada noche y que se sumen a lo que cada uno pone al final)?" + "¿Por qué?" (opcional) · **Cuándo se muestra:** al día siguiente del regreso, después de que todos pagaron su neto y antes de la pregunta de cierre del T2 · **Corte:** 4 o más.
-- **Definición ampliada:** solo cuentan las respuestas de la audiencia; las de otros integrantes se reportan aparte como contexto. Quien no responde cuenta como no satisfecho. Sesgos declarados: cortesía entre amigos y hacia la sponsor (sube la nota) y no respuesta (la baja).
-- **Cálculo:** pagadores de gastos chicos con nota ≥ 4 / pagadores de gastos chicos (la tasa de respuesta y el % de satisfechos entre quienes respondieron se reportan aparte).
-- **Meta:** ≥ 60 % (p. ej. 3 de 5), con tasa de respuesta de al menos 4 de 5 · **Por qué:** el plan no tiene criterio de satisfacción; con 60 % sobre la audiencia, la mayoría tiene que estar satisfecha de verdad aunque alguien no responda. Una nota baja entre amigos es una señal fuerte y se lee con el "¿por qué?".
+- **Instrumento:** CSAT de 1 a 5 en un formulario corto (Google Forms, solo un link) con nombre y una pregunta abierta opcional; lo manda al chat alguien que no sea Lina · **Pregunta:** "Del 1 al 5, ¿qué tan fácil fue saber cuánto debías o te debían y cerrar las cuentas de este viaje?" + "¿Por qué?" (opcional) · **Cuándo se muestra:** al día siguiente del regreso, después de que todos pagaron su neto · **Corte:** 4 o más.
+- **Definición ampliada:** responden todos los integrantes, con o sin la app. Quien no responde cuenta como no satisfecho. Sesgos declarados: cortesía entre amigos y hacia la sponsor (sube la nota) y no respuesta (la baja).
+- **Cálculo:** integrantes con nota ≥ 4 / integrantes del viaje (la tasa de respuesta y el % de satisfechos entre quienes respondieron se reportan aparte).
+- **Meta:** ≥ 67 % (4 de 6), con respuesta de al menos 5 de 6 · **Por qué:** el plan no tiene criterio de satisfacción; con 4 de 6 sobre la audiencia, la mayoría tiene que estar satisfecha aunque alguien no responda. Una nota baja entre amigos es una señal fuerte y se lee con el "¿por qué?".
 - **Registros necesarios:** respuestas del formulario (nombre, nota, comentario, fecha y hora); fecha y hora del envío del link; fecha de pago de cada neto.
 
 ## Métricas de negocio
 Declaradas en el overview, tal cual:
-- **Criterio de continuidad de la sponsor:** Lina sigue si en un viaje el grupo lo usa de principio a fin sin volver al Excel, con cada persona registrando sus gastos y marcando sus pagos. Lo suelta si le toca cargar todo y revisar si los demás actualizaron.
-- **#14 [viability]:** Lina solo registra lo que ella pagó. Según el plan (validaciones en paralelo), en cada viaje se anota si Lina registró algo que pagó otra persona; si pasa dos veces, se rompe su criterio de continuidad, sin importar el nivel.
+- **Criterio de continuidad de la sponsor:** Lina sigue si en un viaje el grupo lo usa de principio a fin sin volver al Excel, con cada persona registrando sus gastos y marcando sus pagos. Lo suelta si le toca cargar todo y revisar si los demás actualizaron. Para leerlo hace falta anotar también si cada uno marcó su pago en la app.
+- **#14 [viability]:** Lina solo registra lo que ella pagó. Según el plan, en cada viaje se anota si Lina registró algo que pagó otra persona; si pasa dos veces, se rompe su criterio de continuidad.
 - **#18 [viability]:** sin Lina armando el grupo, el uso se sostiene. Solo se puede leer cuando organice otra persona.
 
 ## Conciliación con el plan de exposición
-- **Avanzar si al menos 3 de cada 4 gastos chicos están en la app** → lectura complementaria por gasto (≥ 3/4), acompañada de `activation` ≥ 75 %. Los dos usan el mismo corte, así que no hay contradicción.
-- **Avanzar si ningún pagador dejó uno fuera por pena** → `activation`: 0 personas no activadas por pena (pregunta de cierre).
-- **Parar si queda en la app menos de la mitad** (se reconsidera A4) → lectura complementaria por gasto < 1/2.
-- **Entre 1/2 y 3/4, se ajusta antes del nivel 3** → lectura complementaria por gasto.
-- **Heredado del nivel 1: ningún gasto de quien no tiene la app queda fuera** → `acquisition` 100 % (en parte: solo cubre a quien pagó algo chico).
-- **Heredado del nivel 1: ninguna deuda fuera del neto; ni Excel ni cálculo en el chat** → ninguna métrica AARS lo lee; se lee con los registros del T4 (cómo conoció su neto cada persona, si hubo cálculo paralelo).
-- **Persona nombrada (no Lina) que manda "anoten lo de hoy" cada noche** → ninguna métrica lo lee; es un chequeo del proceso (hora y autor de cada mensaje en el chat).
-- **#14, Lina no registra gastos ajenos** → excluido en `acquisition`, `activation` y `retention`; se lee en las métricas de negocio.
+- **Avanzar si ninguna deuda queda fuera del neto** → `activation` 100 %.
+- **Avanzar si no hay Excel ni cálculo en el chat** → `activation` 100 % (excluye a quien cerró por Excel o por el chat).
+- **Avanzar si no queda fuera ningún gasto de quien no tiene la app** → `activation` 100 % (lectura de pagadores) y `acquisition` 100 % (nadie sin su neto).
+- **Parar si dos o más deudas quedan fuera** → `activation` ≤ 4 de 6 por deudas fuera del neto.
+- **Parar si el grupo cierra por Excel o por el chat** → `activation`: mayoría no activada por cálculo paralelo.
+- **#14, la organizadora no registra gastos ajenos** → excluido en `activation` y `retention`; se lee en las métricas de negocio.
+- **Pantallazo público (posible exposición del que más debe)** → ninguna métrica lo lee; se lee en el "¿por qué?" del formulario y en las quejas del chat.

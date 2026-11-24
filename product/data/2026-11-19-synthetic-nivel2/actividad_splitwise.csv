@@ -1,0 +1,13 @@
+id_app,descripcion,monto,n_personas,pagado_por,creado_por,fecha_gasto,creado_en
+a1,Cabaña,900000,6,Laura,Laura,2026-12-05,2026-12-04 20:10
+a2,Gasolina y peajes,150000,6,Diego,Tomás,2026-12-05,2026-12-05 13:20
+a3,Parqueadero en el pueblo,30000,6,Laura,Laura,2026-12-05,2026-12-05 18:00
+a4,Hielo,12000,6,Andrés,Andrés,2026-12-05,2026-12-05 22:40
+a5,Café en la vía,18000,6,Diego,Sara,2026-12-05,2026-12-05 23:10
+a6,Mecato,24000,6,Valeria,Valeria,2026-12-05,2026-12-05 22:15
+a7,Mercado,240000,6,Sara,Sara,2026-12-06,2026-12-06 11:30
+a8,Pan y huevos,21000,6,Sara,Sara,2026-12-06,2026-12-06 09:00
+a9,Propina del lanchero,30000,6,Andrés,Andrés,2026-12-06,2026-12-07 10:00
+a10,Agua,15000,6,Tomás,Tomás,2026-12-06,2026-12-06 23:55
+a11,Arepas,36000,6,Sara,Sara,2026-12-07,2026-12-07 13:00
+a12,Mecato del regreso,27000,6,Laura,Laura,2026-12-07,2026-12-07 15:00

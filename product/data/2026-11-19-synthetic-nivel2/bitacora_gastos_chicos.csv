@@ -1,0 +1,13 @@
+id,dia,pagado_por,que,monto,n_personas,origen,invitacion,id_app
+s1,2026-12-05,Laura,Parqueadero en el pueblo,30000,6,bitacora,no,a3
+s2,2026-12-05,Andrés,Hielo,12000,6,bitacora,no,a4
+s3,2026-12-05,Diego,Café en la vía,18000,6,bitacora,no,a5
+s4,2026-12-05,Valeria,Mecato,24000,6,bitacora,no,a6
+s5,2026-12-06,Sara,Pan y huevos,21000,6,bitacora,no,a8
+s6,2026-12-06,Andrés,Propina del lanchero,30000,6,bitacora,no,a9
+s7,2026-12-06,Valeria,Helados,48000,6,bitacora,no,
+s8,2026-12-06,Tomás,Agua,15000,6,bitacora,no,a10
+s9,2026-12-07,Sara,Arepas,36000,6,bitacora,no,a11
+s10,2026-12-07,Andrés,Hielo para la nevera,10000,6,pregunta de cierre,no,
+s11,2026-12-07,Laura,Mecato del regreso,27000,6,bitacora,no,a12
+i1,2026-12-06,Diego,Cervezas,60000,6,bitacora,si,
